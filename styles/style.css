@@ -73,6 +73,16 @@ a{
     grid-template-columns: 1fr 1fr;
 }
 
+#secondSection{
+    background-image: url(../assets/images/secondSectionBg.png), url(../assets/images/Vector-LightGrey.png), url(../assets/images/Vector-DarkGrey.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+}
+
 /* Content Styles */
 #bannerContent {
     display: flex;
@@ -109,14 +119,48 @@ a{
     -webkit-box-shadow: 8px -8px 0px 1px rgba(141,197,62,1);
     -moz-box-shadow: 8px -8px 0px 1px rgba(141,197,62,1);
     box-shadow: 8px -8px 0px 1px rgba(141,197,62,1);
-
+    transition: background-color 1s
 }
 #btnOrcamento a:hover{
     background-color: white;
+  
 }
 
 #btnOrcamento span{
     font-size: 1.5rem;
+    transition: color 1s
 }
+
+#btnOrcamento a:hover span{
+    color: var(--standardGreen)
+}
+
+#btnOrcamento img{
+}
+
+@keyframes changeBtnOrcamentoImgGreen {
+    0% {
+      opacity: 1;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50% {
+      opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      content: url("../assets/images/wpp-icon-green.png")
+    }
+  }
+
+#btnOrcamento a:hover img{
+    animation: changeBtnOrcamentoImgGreen 0.5s linear forwards;
+}
+
+
 
 
