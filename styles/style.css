@@ -21,7 +21,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
   }
+
 a{
     text-decoration: none;
 }
@@ -34,6 +36,8 @@ a{
     display: flex;
     justify-content: space-evenly;
     padding: 1rem 0.5rem;
+    position: fixed;
+    width: 100%;
 }
 .headerNavBar ul{
     list-style: none;
@@ -65,7 +69,7 @@ a{
 /* Main div style */
 
 /* Sections styles */
-#firstSection{
+.firstSection{
     background-image: url(../assets/images/home-background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,7 +79,12 @@ a{
     grid-template-columns: 1fr 1fr;
 }
 
-#secondSection {
+.secondSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.thirdSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -103,15 +112,21 @@ a{
     color: var(--whiteFont);
 }
 
-/* Second Section */
+/* A ASTRAL */
 
-.secondSectionLeft {
+.sectionLeft {
     padding-top: 3rem;
     padding-left: 5rem;
 }
 
+
+.sectionRight {
+    padding-left: 3rem;
+}
+
 .secondSectionTitle {
     display: flex;
+    padding-top: 4rem;
     gap: 0.5rem;
     text-transform: uppercase;
     color: var(--standardGreen);
@@ -119,23 +134,36 @@ a{
 
 }
 
-.secondSectionContent {
+.thirdSectionTitle{
+    display: flex;
+    padding-top: 4rem;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    color: var(--greyFont);
+    font-size: 1.2rem;  
+}
+
+.sectionContent {
     color: var(--greyFont);
     padding: 1rem; 
     width: 95%;
 }
 
-.secondSectionContent p {
+.sectionContent p {
     margin: 0.5rem 1rem;
 }
 
-.secondSectionContent p b {
+.sectionContent p b {
     color: var(--standardGreen);
 }
 
-.secondSectionContent p mark {
+.sectionContent p mark {
     background-color: var(--greenOpacityLight);
     color: var(--whiteFont);
+}
+
+#noPadding {
+    padding: 0;
 }
 /* Button styles */
 #btnOrcamento{
