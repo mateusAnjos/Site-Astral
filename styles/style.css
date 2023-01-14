@@ -9,6 +9,8 @@
 /* Font Colors */
     --whiteFont: #FFFFFF;
     --lightGreenFont: #8DC53E;
+    --greyFont: #666666; 
+    --greenOpacityLight: rgba(4, 129, 69, 0.6);
 
   }
 
@@ -67,23 +69,21 @@ a{
     background-image: url(../assets/images/home-background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#secondSection{
-    background-image: url(../assets/images/secondSectionBg.png), url(../assets/images/Vector-LightGrey.png), url(../assets/images/Vector-DarkGrey.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto 100%;
-    width: 100vw;
-    height: 100vh;
+#secondSection {
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+
 /* Content Styles */
+
+/* First Section */
 #bannerContent {
     display: flex;
     justify-content: center;
@@ -103,6 +103,40 @@ a{
     color: var(--whiteFont);
 }
 
+/* Second Section */
+
+.secondSectionLeft {
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.secondSectionTitle {
+    display: flex;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    color: var(--standardGreen);
+    font-size: 1.2rem;
+
+}
+
+.secondSectionContent {
+    color: var(--greyFont);
+    padding: 1rem; 
+    width: 95%;
+}
+
+.secondSectionContent p {
+    margin: 0.5rem 1rem;
+}
+
+.secondSectionContent p b {
+    color: var(--standardGreen);
+}
+
+.secondSectionContent p mark {
+    background-color: var(--greenOpacityLight);
+    color: var(--whiteFont);
+}
 /* Button styles */
 #btnOrcamento{
     margin-top: 2rem;
@@ -119,10 +153,11 @@ a{
     -webkit-box-shadow: 8px -8px 0px 1px rgba(141,197,62,1);
     -moz-box-shadow: 8px -8px 0px 1px rgba(141,197,62,1);
     box-shadow: 8px -8px 0px 1px rgba(141,197,62,1);
-    transition: background-color 1s
+    transition: background-color 1s linear;
 }
 #btnOrcamento a:hover{
     background-color: white;
+    transition: background-color 1s linear;
   
 }
 
@@ -132,10 +167,8 @@ a{
 }
 
 #btnOrcamento a:hover span{
-    color: var(--standardGreen)
-}
-
-#btnOrcamento img{
+    color: var(--standardGreen);
+    transition: background-color 1s linear;
 }
 
 @keyframes changeBtnOrcamentoImgGreen {
@@ -160,6 +193,33 @@ a{
 #btnOrcamento a:hover img{
     animation: changeBtnOrcamentoImgGreen 0.5s linear forwards;
 }
+
+.btnFranchise a{
+    color: var(--whiteFont);
+    display: inline-block;
+    margin: 1rem 2rem;
+    font-weight: 700;
+    background-color: #059152;
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    border: 2px solid #059152;
+    -webkit-box-shadow: 8px -8px 2px 0px  rgba(141, 197, 62, 0.6);
+    -moz-box-shadow: 8px -8px 2px 0px  rgba(141, 197, 62, 0.6);
+    box-shadow: 8px -8px 2px 1px  rgba(141, 197, 62, 0.6);
+    transition: background-color 1s linear;
+
+    
+}
+
+
+.btnFranchise a:hover {
+    background: var(--whiteFont);
+    color: #059152;
+    transition: background-color 1s linear;
+
+}
+
+
 
 
 
