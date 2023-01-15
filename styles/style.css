@@ -28,6 +28,9 @@ a{
     text-decoration: none;
 }
  
+ul {
+    list-style: none;
+}
   
 /* Header properties */
 .headerNavBar{
@@ -40,7 +43,6 @@ a{
     width: 100%;
 }
 .headerNavBar ul{
-    list-style: none;
     display: flex;
     align-items: center;
     color: var(--whiteFont);
@@ -87,6 +89,13 @@ a{
 .thirdSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.fourthSection {
+    background: var(--standardGreen);
+    padding: 2rem 5rem;
+    color: var(--whiteFont);
+
 }
 
 
@@ -165,6 +174,60 @@ a{
 #noPadding {
     padding: 0;
 }
+
+#imgLeft {
+    width: 100%;
+    height: 100%; 
+}
+
+/* NOSSOS SERVIÇOS */
+
+.fourthSectionTitle {
+    display: flex;
+    text-transform: uppercase;
+    gap: 0.5rem;
+    font-size: 1.2rem
+}
+
+.collaspse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collaspse ul {
+    padding-top: 2rem;
+}
+
+.collaspeTittle {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    line-height: 3rem;
+    padding: 0 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.collaspeTittle h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.collaspeTittle span
+{
+    font-weight: 200;
+    font-size: 3rem;  
+}
+
+.collaspeContent p {
+    margin: 0.5rem 3rem;
+    font-weight: 300;
+}
+
+
+
 /* Button styles */
 #btnOrcamento{
     margin-top: 2rem;
