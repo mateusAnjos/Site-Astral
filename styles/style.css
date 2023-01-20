@@ -210,7 +210,7 @@ ul {
     align-items: center;
 }
 
-.collaspse ul {
+#collapseUL {
     padding-top: 2rem;
 }
 
@@ -249,6 +249,68 @@ ul {
     
 }
 
+.stilyzedUL{
+    list-style-type: disc;
+    margin: 0 5rem;
+    padding-top: 0.5rem;
+    font-weight: 300;
+}
+
+/* Segmentos de atuação*/
+
+.fifthSection{
+   
+}
+.segmentosAtuacaoTitle{
+    padding-left: 5rem;
+    display: flex;
+    padding-top: 3rem;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    color: var(--standardGreen);
+    font-size: 1.2rem;
+}
+.fifthSectionContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.leftBox{
+    font-size: 1.5rem;
+    color: var(--greyFont);
+    display: flex;
+    justify-content:right;
+    align-items:center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    grid-column: 1
+}
+.rightBox{
+    font-size: 1.5rem;
+    color: var(--greyFont);
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    grid-column: 2
+}
+.leftBoxContent{
+    display: flex;
+    align-items:center;
+    justify-content: left;
+    gap: 2rem;
+    width: 60%;
+}
+.rightBoxContent{
+    display: flex;
+    align-items:center;
+    justify-content: left;
+    gap: 2rem;
+    width: 60%;
+}
+.leftBoxText {
+    
+}
 
 
 /* Button styles */
