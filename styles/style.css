@@ -444,6 +444,10 @@ ul {
 .orcamentoEmail img{
     margin-right: 0.5rem
 }
+.orcamentoEmail a{
+    color: white;
+    text-decoration: underline
+}
 
 #endereco{
     margin-top:1rem
