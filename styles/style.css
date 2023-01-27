@@ -627,9 +627,6 @@ ul {
 
 
 
-
-
-
 /* footer */
 .footerContainer{
     display: grid;
@@ -637,6 +634,10 @@ ul {
     padding: 2rem;
 }
 
+.footerContainer a{
+    color: var(--greyFont)
+    text-decoration: none;
+}
 .leftFooterSection{
     display: flex;
     color: var(--greyFont);
@@ -665,9 +666,10 @@ ul {
 
 .rightFooterContent{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
-    width: 100%;
+    margin-left: 0;
+    margin-right: 50%;
 }
 #footerUL{
     display: flex;
