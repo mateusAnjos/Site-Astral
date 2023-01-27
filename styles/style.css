@@ -15,6 +15,12 @@
   }
 
 
+
+
+
+
+
+
 /* Global parameters */
 *{
     margin: 0;
@@ -32,6 +38,17 @@ ul {
     list-style: none;
 }
   
+
+
+
+
+
+
+
+
+
+
+
 /* Header properties */
 .headerNavBar{
     background-color: var(--standardGreen);
@@ -68,7 +85,23 @@ ul {
     margin-left: 0;
 }
 
+
+
+
+
+
+
+
+
 /* Main div style */
+
+
+
+
+
+
+
+
 
 /* Sections styles */
 .firstSection{
@@ -103,6 +136,16 @@ ul {
 
 /* Content Styles */
 
+
+
+
+
+
+
+
+
+
+
 /* First Section */
 #bannerContent {
     display: flex;
@@ -122,6 +165,20 @@ ul {
     font-size: 1.8125rem;
     color: var(--whiteFont);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* A ASTRAL */
 
@@ -195,6 +252,20 @@ ul {
     height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* NOSSOS SERVIÇOS */
 
 .fourthSectionTitle {
@@ -256,10 +327,22 @@ ul {
     font-weight: 300;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Segmentos de atuação*/
 
 .fifthSection{
-   
+   margin-bottom:2rem
 }
 .segmentosAtuacaoTitle{
     padding-left: 5rem;
@@ -311,6 +394,72 @@ ul {
 .leftBoxText {
     
 }
+
+
+
+
+
+
+
+
+
+/*seção Orçamento*/
+.sixthSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../assets/images/orcamento-bg.png);
+    background-size: 100% 100%;
+    color:white;
+    padding: 2rem 5rem;
+}
+
+.orcamentoLeftSection{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: auto;
+}
+.orcamentoTitle {
+    display: flex;
+    flex-direction:row;
+    text-transform: uppercase;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-top:1rem
+}
+
+.orcamentoText{
+    margin:2rem 0
+}
+.orcamentoText h2{
+    text-transform: uppercase
+}
+.orcamentoTelefone{
+    margin: 1rem 0
+}
+.orcamentoTelefone img{
+    margin-right: 0.5rem
+}
+.orcamentoEmail img{
+    margin-right: 0.5rem
+}
+
+#endereco{
+    margin-top:1rem
+}
+
+.rounded-edges {
+    border-radius:0.5rem
+}
+
+
+
+
+
+
+
+
 
 
 /* Button styles */
@@ -366,6 +515,58 @@ ul {
     animation: changeBtnOrcamentoImgGreen 0s linear forwards;
 }
 
+/* BTN Orçamento Branco */
+
+#btnOrcamentoWhite{
+    margin-top: 2rem;
+}
+#btnOrcamentoWhite a{
+    display: inline-block;
+    gap: 0.5rem;
+    color: var(--standardGreen);
+    font-weight: 700;
+    background-color: white ;
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    border: 2px solid #038145;
+    transition: background-color 0.5s linear, border 05.2 linear ;
+}
+#btnOrcamentoWhite a:hover{
+    background-color: var(--standardGreen);
+    transition: background-color 0.5s linear;
+    border: 2px solid white;
+  
+}
+
+#btnOrcamentoWhite span{
+    font-size: 1.5rem;
+    transition: color 0.5s
+}
+
+#btnOrcamentoWhite a:hover span{
+    color: white;
+    transition: background-color 0.5s linear;
+}
+
+@keyframes changeBtnOrcamentoImgWhite {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+      content: url("../assets/images/wpp-icon.png")
+    }
+  }
+
+#btnOrcamentoWhite a:hover img{
+    animation: changeBtnOrcamentoImgWhite 0s linear forwards;
+}
+
 .btnFranchise a{
     color: var(--whiteFont);
     display: inline-block;
@@ -417,6 +618,14 @@ ul {
 
 
 
+
+
+
+
+
+
+
+/* footer */
 .footerContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
