@@ -1,0 +1,260 @@
+/* Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+/* Layout Colors */
+    --standardGreen: #038145;
+    
+
+/* Font Colors */
+    --whiteFont: #FFFFFF;
+    --lightGreenFont: #8DC53E;
+    --greyFont: #666666; 
+    --greenOpacityLight: rgba(4, 129, 69, 0.6);
+
+  }
+
+
+
+
+
+
+
+
+/* Global parameters */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+a{
+    text-decoration: none;
+}
+ 
+ul {
+    list-style: none;
+}
+  
+
+
+/* Header properties */
+.headerNavBar{
+    background-color: var(--standardGreen);
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0.5rem;
+    position: fixed;
+    width: 100%;
+}
+.headerNavBar ul{
+    display: flex;
+    align-items: center;
+    color: var(--whiteFont);
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 25px;
+    padding: 0;
+}
+.headerNavBar li{
+    margin: 0 1.5rem;
+    font-weight: 700;
+    display: flex;
+}
+.headerNavBar a{
+    color: var(--whiteFont);
+    text-decoration: none;
+}
+.headerNavBar a:hover{
+    color: var(--lightGreenFont);
+}
+
+.headerNavBar li:first-child {
+    margin-left: 0;
+}
+
+
+
+/*seção Políticas*/
+.firstSection{
+    height:100vh
+}
+
+
+
+/*seção Orçamento*/
+.sixthSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../assets/images/orcamento-bg.png);
+    background-size: 100% 100%;
+    color:white;
+    padding: 2rem 5rem;
+}
+
+.orcamentoLeftSection{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: auto;
+}
+.orcamentoTitle {
+    display: flex;
+    flex-direction:row;
+    text-transform: uppercase;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-top:1rem
+}
+
+.orcamentoText{
+    margin:2rem 0
+}
+.orcamentoText h2{
+    text-transform: uppercase
+}
+.orcamentoTelefone{
+    margin: 1rem 0
+}
+.orcamentoTelefone img{
+    margin-right: 0.5rem
+}
+.orcamentoEmail img{
+    margin-right: 0.5rem
+}
+.orcamentoEmail a{
+    color: white;
+    text-decoration: underline
+}
+
+#endereco{
+    margin-top:1rem
+}
+
+.rounded-edges {
+    border-radius:0.5rem
+}
+
+
+
+
+
+
+/* Button styles */
+
+
+/* BTN Orçamento Branco */
+
+#btnOrcamentoWhite{
+    margin-top: 2rem;
+}
+#btnOrcamentoWhite a{
+    display: inline-block;
+    gap: 0.5rem;
+    color: var(--standardGreen);
+    font-weight: 700;
+    background-color: white ;
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    border: 2px solid #038145;
+    transition: background-color 0.5s linear, border 05.2 linear ;
+}
+#btnOrcamentoWhite a:hover{
+    background-color: var(--standardGreen);
+    transition: background-color 0.5s linear;
+    border: 2px solid white;
+  
+}
+
+#btnOrcamentoWhite span{
+    font-size: 1.5rem;
+    transition: color 0.5s
+}
+
+#btnOrcamentoWhite a:hover span{
+    color: white;
+    transition: background-color 0.5s linear;
+}
+
+@keyframes changeBtnOrcamentoImgWhite {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+      content: url("../assets/images/wpp-icon.png")
+    }
+  }
+
+#btnOrcamentoWhite a:hover img{
+    animation: changeBtnOrcamentoImgWhite 0s linear forwards;
+}
+
+
+
+
+
+/* footer */
+.footerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+}
+
+.leftFooterSection{
+    display: flex;
+    color: var(--greyFont);
+    justify-content: right;
+    align-items: center;
+    padding-top: 2rem;
+}
+.leftFooterContent{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+}
+.leftFooterSection p{
+    margin-top:1rem;
+ 
+}
+.rightFooterSection{
+    display: flex;
+    color: var(--greyFont);
+    justify-content: right;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.rightFooterContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+#footerUL{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.footerIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+footer li{
+    margin-bottom: 1rem;
+}

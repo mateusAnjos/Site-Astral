@@ -130,7 +130,7 @@ ul {
     background: var(--standardGreen);
     padding: 2rem 5rem;
     color: var(--whiteFont);
-
+    scroll-margin-top: 6rem
 }
 
 
@@ -342,7 +342,8 @@ ul {
 /* Segmentos de atuação*/
 
 .fifthSection{
-   margin-bottom:2rem
+   margin-bottom:2rem;
+   scroll-margin-top:6rem
 }
 .segmentosAtuacaoTitle{
     padding-left: 5rem;
