@@ -87,9 +87,9 @@ ul {
     margin-right: auto;
     max-width: 70%;
 }
-}
+
 .politicaContent{
-    color: var(--greyFont)
+    color: var(--greyFont);
     max-width:50%
 }
 .title{
@@ -239,7 +239,7 @@ strong{
 }
 
 .footerContainer a{
-    color: var(--greyFont)
+    color: var(--greyFont);
     text-decoration: none;
 }
 .leftFooterSection{
