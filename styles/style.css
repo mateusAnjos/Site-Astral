@@ -4,6 +4,8 @@
 :root {
 /* Layout Colors */
     --standardGreen: #038145;
+    --backgroundGreenMobile: #059152;
+    --darkGreen: #02331D;
     
 
 /* Font Colors */
@@ -40,6 +42,9 @@ ul {
   
 hr{
     display: none;
+}
+.mobileOnly{
+    display:none;
 }
 
 
@@ -702,33 +707,53 @@ footer li{
     background-color: #101010;
 }
 
+
+
+
+
 /* Responsive Media Queries */
 
 @media (max-width: 375px){
+section,footer{
+        overflow: hidden;
+        white-space: wrap;
+        word-break: break-word;
+}
+.mobileOnly{
+    display:block;
+}
 
 hr{
     display: block;
     width: 90%;
-    border: 2px solid rgba(5, 145, 82, 0.3);
+    border: 1px solid rgba( 5,145,82, 0.3);
 }
 
+.headerTelefone{
+    background-color: var(--darkGreen);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size:1rem;
+    text-align:right;
+}
 /* Header properties */
 .headerNavBar{
-    max-width: 375px;
-    background-color: var(--standardGreen);
-    height: 6rem;
+    background-color: var(--backgroundGreenMobile);
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0.5rem;
-    position: fixed;
+    padding: 1rem 1rem;
+    position: initial;
 }
-#logoMobile{
-    margin-left: 1rem;
+#astralHeaderLogo{
+display: none
 }
+
 .hamburger {
         display: block;
         cursor: pointer;
+       
 }
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -747,7 +772,8 @@ hr{
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--standardGreen);
+    color: white;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -763,28 +789,84 @@ hr{
     align-items: flex-start;
 }
 
-.headerNavBar li{
-    margin-left:1rem ;
+
+.headerNavBar li {
+    margin: 1rem;
     font-weight: 700;
     display: flex;
     text-transform: uppercase;
+    border-bottom: 1px white solid;
+    width: 90%;
 }
 
-.headerNavBar a{
+.headerNavBar a {
     display: flex;
     flex-direction: row;
-    margin: 2.5rem 0;
-    color: #038145;
+    color: white;
     text-decoration: none;
+    padding-bottom: 0.5rem;
 }
 .headerNavBar a:hover{
     color: var(--lightGreenFont);
 }
 
 
+.firstSection{
+    background-image: url(../assets/images/mobile-home-bg.png);
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+}
+#bannerContent h1 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+#btnOrcamento {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btnOrcamento a{
+    padding: 0.5rem;
+    width: 100%;
+    
+}
+#btnOrcamento span {
+    font-size: 1rem;
+}
+
+
+
 .secondSection{
     display: flex;
     flex-direction: column;
+}
+.sectionLeft{
+    padding: initial
+}
+.secondSectionTitle img{
+    display:none
+}
+.secondSectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    color: var(--standardGreen);
+    font-size: 1.2rem;
+}
+
+
+.btnFranchise{
+    margin: 1rem;
+}
+.btnFranchise a{
+    padding: 0.5rem 2rem
 }
 
 .segmentosAtuacaoTitle {
@@ -829,7 +911,7 @@ hr{
 .sixthSection{
     display: flex;
     flex-direction: column;
-    background-color: var(--standardGreen);
+    background-color: var(--backgroundGreenMobile);
     background-image: initial;
     padding: 2rem;
 }
@@ -863,6 +945,22 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#botaoOrcamentoWhite{
+    margin-left:-20px
+}
+
+#btnOrcamentoWhite a {
+    gap: 1rem;
+    display: flex;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+#btnOrcamentoWhite span {
+    font-size: 1rem;
+    margin-right: 1rem;
 }
 
 iframe{
@@ -908,7 +1006,7 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--standardGreen);
+    background-color: var(--backgroundGreenMobile);
     color: var(--whiteFont);
     padding: 1rem;
     font-weight: 400;
