@@ -803,7 +803,7 @@ display: none
     color: white;
     text-decoration: none;
     padding-bottom: 0.5rem;
-    width: 100%;
+   
 }
 .headerNavBar a:hover{
     color: var(--lightGreenFont);
@@ -1170,7 +1170,7 @@ margin-left: 2rem;
     color: white;
     text-decoration: none;
     padding-bottom: 0.5rem;
-    width: 100%;
+  
 }
 .headerNavBar a:hover{
     color: var(--lightGreenFont);
