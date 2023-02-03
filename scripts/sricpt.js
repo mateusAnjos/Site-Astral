@@ -35,11 +35,10 @@ function mobileMenu() {
     console.log("navmenu ativado")
 }
 
-document.onclick=function (evt){
-    if(evt.target.id !== "hamburger"){
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
-}
 
+
+function closeMenu(){
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
 

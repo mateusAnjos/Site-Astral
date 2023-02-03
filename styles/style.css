@@ -83,6 +83,7 @@ hr{
 .headerNavBar a{
     color: var(--whiteFont);
     text-decoration: none;
+    
 }
 .headerNavBar a:hover{
     color: var(--lightGreenFont);
@@ -738,6 +739,7 @@ hr{
     padding: 1rem 1rem;
     position: initial;
 }
+
 #astralHeaderLogo{
 display: none
 }
@@ -801,6 +803,7 @@ display: none
     color: white;
     text-decoration: none;
     padding-bottom: 0.5rem;
+    width: 100%;
 }
 .headerNavBar a:hover{
     color: var(--lightGreenFont);
@@ -810,6 +813,7 @@ display: none
 
 .firstSection{
     background-image: url(../assets/images/mobile-home-bg.png);
+    background-position: center;
     display: flex;
     padding: 3rem;
     align-items: center;
@@ -1061,7 +1065,7 @@ iframe{
 }
 
 
-@media (min-width:768px ){
+@media (min-width:768px) and (max-width:1365px){
 
     section,footer{
         overflow: hidden;
@@ -1166,9 +1170,39 @@ margin-left: 2rem;
     color: white;
     text-decoration: none;
     padding-bottom: 0.5rem;
+    width: 100%;
 }
 .headerNavBar a:hover{
     color: var(--lightGreenFont);
+}
+
+
+/* Astral Barueri */
+.firstSection{
+    background-image: url(../assets/images/mobile-home-bg.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bannerContent{
+    margin-top: -16rem;
+    text-align: center;
+}
+#bannerContent span {
+    font-size: 2.5rem
+}
+#bannerContent h1 {
+    font-size: 5rem;
+}
+
+#btnOrcamento img{
+    
+        height: 3rem;
+        margin-top: 0.5rem;
+}
+#btnOrcamento span{
+    margin-left: 1rem
 }
 
 
@@ -1176,6 +1210,9 @@ margin-left: 2rem;
 /* Grupo Astral */
 .secondSection{
     display: flex;
+}
+.secondSectionTitle h2{
+    font-size: 3rem;
 }
 .secondSectionTitle hr{
     display: none
@@ -1192,28 +1229,34 @@ margin-left: 2rem;
 .thirdSection{
     display: flex;
 }
+.thirdSectionTitle{
+    font-size: 3rem;
+}
 .thirdSectionTitle hr{
     display: none;
 }
 .sectionContent{
-    font-size: 1.5rem
+    font-size: 2rem
 }
 
 /* Nossos Serviços */
 .fourthSection{
     padding: 2rem 2rem;
 }
+.fourthSectionTitle {
+    font-size: 3rem;
+}
 .collaspeTittle{
     padding: 0px 1rem;
 }
 .collaspeTittle h3{
-    font-size: 1.8rem
+    font-size: 2rem
 }
 .collaspeContent p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .collaspeContent li{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .collaspeContent:last-child{
     margin-bottom:1rem
@@ -1221,6 +1264,9 @@ margin-left: 2rem;
 
 
 /* Segmentos de atuação */
+.segmentosAtuacaoTitle{
+    font-size: 2rem
+}
 .segmentosAtuacaoTitle hr{
     display: none
 }
@@ -1229,14 +1275,17 @@ margin-left: 2rem;
 }
 .leftBoxContent{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    font-size: 1.6rem;
+
 }
 .rightBox{
     justify-content: center
 }
 .rightBoxContent{
     display:flex;
-    flex-direction: column
+    flex-direction: column;
+    font-size: 1.6rem;
 }
 
 /* ORÇAMENTO */
@@ -1350,7 +1399,7 @@ iframe{
     align-items: flex-start;
 }
 #footerUL a{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 .footerIcons {
