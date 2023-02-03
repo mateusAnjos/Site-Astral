@@ -14,21 +14,32 @@ document.querySelectorAll('.accordion-button').forEach(button =>{
     })
 })
 
+
+
 //Burger Menu Logic
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const menuItem = document.getElementsByClassName(".nav-item")
 
 hamburger.addEventListener("click", mobileMenu);
-// document.body.addEventListener('click', closeMenuAnywhere);
+
+for (var i = 0; i < menuItem.length; i++) {
+    menuitem[i].onclick = closeMenu();
+  }
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
+    console.log("burger ativado");
     navMenu.classList.toggle("active");
+    console.log("navmenu ativado")
 }
 
-// function closeMenuAnywhere(){
-//         hamburger.classList.remove("active");
-//         navMenu.classList.remove("active");
-//         console.log("fechou")
-// } 
+document.onclick=function (evt){
+    if(evt.target.id !== "hamburger"){
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+}
+
+

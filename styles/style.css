@@ -9,12 +9,12 @@
     
 
 /* Font Colors */
-    --whiteFont: #FFFFFF;
-    --lightGreenFont: #8DC53E;
-    --greyFont: #666666; 
-    --greenOpacityLight: rgba(4, 129, 69, 0.6);
+--whiteFont: #FFFFFF;
+--lightGreenFont: #8DC53E;
+--greyFont: #666666; 
+--greenOpacityLight: rgba(4, 129, 69, 0.6);
 
-  }
+}
 
 
 
@@ -87,17 +87,6 @@ hr{
 .headerNavBar a:hover{
     color: var(--lightGreenFont);
 }
-
-
-
-
-
-
-
-
-
-
-/* Main div style */
 
 
 
@@ -728,6 +717,9 @@ hr{
     width: 90%;
     border: 1px solid rgba( 5,145,82, 0.3);
 }
+.displayNoneOnMobile{
+    display: none;
+}
 
 .headerTelefone{
     background-color: var(--darkGreen);
@@ -755,8 +747,12 @@ display: none
         cursor: pointer;
        
 }
+.hamburger span{
+    background-color: white;
+}
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
+  
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -811,6 +807,7 @@ display: none
 }
 
 
+
 .firstSection{
     background-image: url(../assets/images/mobile-home-bg.png);
     display: flex;
@@ -844,6 +841,9 @@ display: none
     display: flex;
     flex-direction: column;
 }
+.sectionContent{
+    text-align: justify;
+}
 .sectionLeft{
     padding: initial
 }
@@ -862,6 +862,26 @@ display: none
 }
 
 
+.thirdSection{
+    display: flex;
+    flex-direction: column;
+}
+.sectionRight{
+    padding: initial
+}
+.thirdSectionTitle img{
+    display:none
+}
+.thirdSectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    color: var(--standardGreen);
+    font-size: 1.2rem;
+}
 .btnFranchise{
     margin: 1rem;
 }
@@ -869,6 +889,32 @@ display: none
     padding: 0.5rem 2rem
 }
 
+.fourthSection {
+    padding: 2rem 1rem;
+}
+.fourthSectionTitle img{
+    display: none
+}
+.fourthSectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.collaspeTittle {
+    padding: initial;
+    display: flex;
+    gap: 3rem;
+}
+.collaspeTittle h3{
+    text-align: justify;
+    font-size: 1rem;
+}
 .segmentosAtuacaoTitle {
     font-size: 0.8rem;
     flex-direction: column;
@@ -1016,6 +1062,314 @@ iframe{
 
 
 @media (min-width:768px ){
+
+    section,footer{
+        overflow: hidden;
+        white-space: wrap;
+        word-break: break-word;
+}
+.mobileOnly{
+    display:block;
+}
+
+hr{
+    display: block;
+    width: 90%;
+    border: 1px solid rgba( 5,145,82, 0.3);
+}
+.displayNoneOnMobile{
+    display: none;
+}
+
+
+
+.headerTelefone{
+    background-color: var(--darkGreen);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.3rem;
+    text-align:right;
+}
+/* Header properties */
+.headerNavBar{
+    background-color: var(--backgroundGreenMobile);
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    position: initial;
+}
+#astralHeaderLogo{
+display: block;
+margin-left: 2rem;
+}
+#astralHeaderLogoMobile{
+    display: none
+}
+.hamburger {
+        display: block;
+        cursor: pointer;
+       margin-right: 2rem
+}
+.hamburger span{
+    background-color: white;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--standardGreen);
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    left: 0;
+    top:10rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.headerNavBar li {
+    margin: 1rem;
+    font-weight: 700;
+    display: flex;
+    text-transform: uppercase;
+    border-bottom: 1px white solid;
+    width: 90%;
+}
+
+.headerNavBar a {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+}
+.headerNavBar a:hover{
+    color: var(--lightGreenFont);
+}
+
+
+
+/* Grupo Astral */
+.secondSection{
+    display: flex;
+}
+.secondSectionTitle hr{
+    display: none
+}
+.sectionLeft{
+    padding-left: 3rem
+}
+
+.btnFranchise a{
+    padding: 1rem 6rem;
+    font-size: 2rem;
+}
+/* Unidade Barueri */
+.thirdSection{
+    display: flex;
+}
+.thirdSectionTitle hr{
+    display: none;
+}
+.sectionContent{
+    font-size: 1.5rem
+}
+
+/* Nossos Serviços */
+.fourthSection{
+    padding: 2rem 2rem;
+}
+.collaspeTittle{
+    padding: 0px 1rem;
+}
+.collaspeTittle h3{
+    font-size: 1.8rem
+}
+.collaspeContent p{
+    font-size: 1.3rem;
+}
+.collaspeContent li{
+    font-size: 1.3rem;
+}
+.collaspeContent:last-child{
+    margin-bottom:1rem
+}
+
+
+/* Segmentos de atuação */
+.segmentosAtuacaoTitle hr{
+    display: none
+}
+.leftBox{
+    justify-content: center;
+}
+.leftBoxContent{
+    display: flex;
+    flex-direction: column
+}
+.rightBox{
+    justify-content: center
+}
+.rightBoxContent{
+    display:flex;
+    flex-direction: column
+}
+
+/* ORÇAMENTO */
+.sixthSection{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundGreenMobile);
+    background-image: initial;
+    padding: 2rem;
+    margin-top: 1rem
+}
+.orcamentoLeftSection{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.orcamentoTitle{
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+.orcamentoTitle img{
+    display: none;
+}
+.orcamentoTitle hr{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 700px;
+}
+.orcamentoText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.orcamentoText h2{
+    font-size: 3rem
+}
+.orcamentoTelefone{
+    font-size: 2rem;
+}
+.orcamentoEmail{
+    font-size: 2rem;
+}
+.orcamentoRightSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#btnOrcamentoWhite a {
+    gap: 1rem;
+    display: flex;
+    padding: 1rem;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+}
+#btnOrcamentoWhite img{
+    width: 44px;
+}
+
+#btnOrcamentoWhite span {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+iframe{
+    width: 700px;
+    height: 450px;
+}
+#endereco{
+    text-align: center;
+    font-size: 1.5rem;
+}
+#endereco img{
+    display: none;
+}
+
+
+/*Footer*/
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.leftFooterContent p{
+    display: none;
+}
+.leftFooterSection {
+    justify-content: left;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.rightFooterSection {
+    justify-content: left;
+    padding-left: 2rem;
+}
+.rightFooterContent {
+
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    
+}
+#footerUL {
+    justify-content: left;
+    align-items: flex-start;
+}
+#footerUL a{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footerIcons {
+    align-items: flex-start;
+
+}
+#footerInfosMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundGreenMobile);
+    color: var(--whiteFont);
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+
+
 
 }
 

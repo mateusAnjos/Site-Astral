@@ -32,13 +32,13 @@
                         <img id="astralHeaderLogoMobile" class="mobileOnly"  src="./assets/images/astal-logo-mobile.png" alt="">
                     </a>
         <ul class="nav-menu"> 
-            <li class="nav-item"><a href="#A-Astral">A Astral</a></li>
-            <li class="nav-item"><a href="#Nossos-Servicos">Nossos Serviços</a></li>
-            <li class="nav-item"><a href="#Segmentos-Atuacao">Segmentos de Atuação</a></li>
-            <li class="nav-item"><a href="#Orcamento">Orçamento</a></li>
-            <li class="nav-item"><a href="/politica-da-empresa.html">Política da Empresa</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#A-Astral">A Astral</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#Nossos-Servicos">Nossos Serviços</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#Segmentos-Atuacao">Segmentos de Atuação</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#Orcamento">Orçamento</a></li>
+            <li class="nav-item" ><a href="/politica-da-empresa.html">Política da Empresa</a></li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger " id="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -72,13 +72,13 @@
                     <p>A <b>Astral</b> atua há mais de 30 anos no mercado de controle de pragas e 
                         vetores urbanos e é líder na América Latina. Durante a sua trajetória, 
                         se multiplicou em tamanho, investiu em tecnologia avançada, mas manteve 
-                        a mesma qualidade no serviço e no atendimento que fez da empresa a líder 
-                        do setor em toda a América Latina.</p>
+                        a mesma qualidade no serviço e no atendimento que fez da empresa a <mark class="">líder 
+                        do setor em toda a América Latina.</mark></p>
                     <p>
                         Hoje a <b>Rede Astral</b> está distribuída em 20 estados brasileiros, 
                         localizados em cidades do norte ao sul do país, ultrapassando a marca 
-                        das <mark>40 unidades fraqueadas</mark>. Além disso, possui mais de 10.000 pontos 
-                        atingidos em contratos, <mark>18 Selos de Excelência</mark> em Franchising.
+                        das <mark class="displayNoneOnMobile">40 unidades fraqueadas</mark>. Além disso, possui mais de 10.000 pontos 
+                        atingidos em contratos, <mark class="displayNoneOnMobile">18 Selos de Excelência</mark> em Franchising.
                     </p>
                 </div>
                 <div class="btnFranchise">
@@ -86,18 +86,19 @@
                 </div>
             </div>
 
-            <div class="sectionRight">
+            <div class="sectionRight displayNoneOnMobile">
                 <img id="secondSectionImage" src="/assets/images/secondSectionBg.png" alt="Homem dirigindo carro da Astral">
             </div>
         </section>
         <section class="thirdSection" id="Unidade-Barueri">
-            <div class="sectionLeft" id="noPadding">
+            <div class="sectionLeft displayNoneOnMobile" id="noPadding">
                 <img src="/assets/images/dedetizacao.png" alt="Mão espirrando inseticida" id="imgLeft">
             </div>
             <div class="sectionRight">
                 <div class="thirdSectionTitle">
                     <img src="/assets/images/greenIcon.svg" alt="Ícone">
                     <h2>Unidade Barueri</h2>
+                    <hr>
                 </div>
                 <div class="sectionContent">
                     <p>A <b>Unidade Barueri</b> nasceu em 2015 para suprir a necessidade que 
@@ -117,6 +118,7 @@
             <div class="fourthSectionTitle">
                 <img src="/assets/images/whiteIcon.svg" alt="Ícone">
                 <h2>Nossos Serviços</h2>
+                
             </div>
             <div class="collaspse">
                 <ul id="collapseUL">
@@ -534,5 +536,15 @@
         </div>
     </footer>
     <script src="./scripts/sricpt.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+    jQuery("body").on("click", function(){
+        if(jQuery(".hamburger").hasClass("active")){
+            jQuery(".hamburger").toggleClass("active");
+        }
+    })
+})
+    </script>
 </body>
 </html>

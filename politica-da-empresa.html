@@ -23,18 +23,22 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
+        <div class="headerTelefone mobileOnly">
+            <span>(11)4375-7919 | 4375-7985</span>
+        </div>
         <nav class="headerNavBar">
-            <a href="/index.html">
-                <img id="astralHeaderLogo" src="./assets/images/logo.png" alt="Logo da Astral Saúde Ambiental">
-            </a>
+                    <a href="/index.html" id="logoMobile">
+                        <img id="astralHeaderLogo" src="./assets/images/logo.png" alt="Logo da Astral Saúde Ambiental">
+                        <img id="astralHeaderLogoMobile" class="mobileOnly"  src="./assets/images/astal-logo-mobile.png" alt="">
+                    </a>
         <ul class="nav-menu"> 
-            <li><a href="#A-Astral">A Astral</a></li>
-            <li><a href="#Nossos-Servicos">Nossos Serviços</a></li>
-            <li><a href="#Segmentos-Atuacao">Segmentos de Atuação</a></li>
-            <li><a href="#Orcamento">Orçamento</a></li>
-            <li><a href="/politica-da-empresa.html">Política da Empresa</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#A-Astral">A Astral</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#Nossos-Servicos">Nossos Serviços</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#Segmentos-Atuacao">Segmentos de Atuação</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="#Orcamento">Orçamento</a></li>
+            <li class="nav-item" onclick="closeMenu()"><a href="/politica-da-empresa.html">Política da Empresa</a></li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -47,6 +51,7 @@
                     <div class="title">
                         <img src="/assets/images/greenIcon.svg" alt="Ícone">
                         <h2>Nossa Política</h2>
+                        <hr>
                     </div>
                     <p>A <Strong>REDE ASTRAL</Strong> fornece serviços de controle de pragas e vetores urbanos, higienização e desinfecção de reservatórios de água, visando a plena satisfação dos clientes atendidos, atuando com tecnologia apropriada, compromisso com a proteção do meio ambiente, cumprindo todas as legislações aplicáveis, melhorando continuamente seus processos e serviços por meio dos seguintes compromissos:</p>
                     <ul>
@@ -64,6 +69,7 @@
                 <div class="title">
                     <img src="/assets/images/greenIcon.svg" alt="Ícone">
                     <h2>Nossa Visão</h2>
+                    <hr>
                 </div>
                 <p>Ser reconhecida como referência de excelência na prestação de serviços de Controle de Pragas Urbanas, destacando-se pela sua técnica, qualidade, eficiência e equipe altamente treinada e capacitada.</p>
             </div>
@@ -71,6 +77,7 @@
                 <div class="title">
                     <img src="/assets/images/greenIcon.svg" alt="Ícone">
                     <h2>Nossa Missão</h2>
+                    <hr>
                 </div>
                 <p>Controlar as pragas urbanas, prevenir e solucionar problemas causados por elas, protegendo os clientes e satisfazendo suas necessidades e expectativas através de mão de obra altamente treinada e qualificada, contribuindo para a saúde pública e ambiental.</p>
             </div>
@@ -78,6 +85,7 @@
                 <div class="title">
                     <img src="/assets/images/greenIcon.svg" alt="Ícone">
                     <h2>Nossos Valores</h2>
+                    <hr>
                 </div>
                 <ul>
                     <li>Ética e transparência</li>
@@ -96,6 +104,7 @@
                 <div class="orcamentoTitle">
                     <img src="/assets/images/whiteIcon.svg" alt="Ícone">
                     <h2>Orçamento</h2>
+                    <hr>
                 </div>
                 <div class="orcamentoBtn">
                     <div id="btnOrcamentoWhite">
@@ -120,14 +129,16 @@
             </div>
 
             <div class="orcamentoRightSection">
-                <div class="mapIframe">
-                    <div class="mapouter" rounded-edges><div class="gmap_canvas rounded-edges"><iframe width="480" height="253" id="gmap_canvas" src="https://maps.google.com/maps?q=rua%20safira,%20346,%20jardim%20dos%20camargos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org">pirate bay</a><br><style>.mapouter{position:relative;text-align:right;height:253px;width:480px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:253px;width:480px;}</style></div></div>
+                <div class="mapIframe rounded-edges" >
+                    <iframe class="rounded-edges" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8562058561756!2d-46.865458185385336!3d-23.50168826527558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0232c76a140f%3A0xdf379a10667a0067!2sRua%20Safira%2C%20346%20-%20Jardim%20dos%20Camargos%2C%20Barueri%20-%20SP%2C%2006410-200!5e0!3m2!1spt-BR!2sbr!4v1674945936051!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
                 </div>
                 <div id="endereco">
                     <img src="../assets/images/pinpoint-icon.png" alt="icone de marcador de mapa">
                     <span>Rua Safira, 346, Jardim dos Camargos - Barueri/SP</span>
                 </div>
-            </div> 
+            </div>
+
+                   
         </section>
     </main>
     <footer>
@@ -152,8 +163,22 @@
                 </div>
             </div>
             </div>
+            <div id="footerInfosMobile">
+                <span>© Copyright 2023 – Astral Saúde Ambiental – Unidade Astral Barueri</span>
+            </div>
         </div>
     </footer>
     <script src="./scripts/sricpt.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+    jQuery("body").on("click", function(){
+        if(jQuery(".hamburger").hasClass("active")){
+            jQuery(".hamburger").toggleClass("active");
+        }
+    })
+})
+    </script>
+</body>
 </body>
 </html>
