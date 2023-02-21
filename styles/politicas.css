@@ -863,6 +863,24 @@ iframe{
     
 
 @media (min-width: 1366px ){
-    
+    .politicaContent{
+        max-width: initial;
+    }
+    .orcamentoLeftSection{
+        margin-left: 10%;
+    }
+    #btnOrcamentoWhite{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    #btnOrcamentoWhite a{
+        padding: 0.5rem 2rem;
+    }
+    #btnOrcamentoWhite span{
+        font-size: 1.2rem;
+    }
 }
     
