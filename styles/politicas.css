@@ -333,7 +333,7 @@ footer li{
 
 /* Responsive Media Queries */
 
-@media (max-width: 375px){
+@media (max-width: 767px){
     section,footer{
             overflow: hidden;
             white-space: wrap;
@@ -587,9 +587,6 @@ footer li{
     }
     
 }
-
-
-
 
 @media (min-width:768px) and (max-width:1365px){
     
@@ -861,7 +858,6 @@ iframe{
 
 }
     
-
 @media (min-width: 1366px ){
     .politicaContent{
         max-width: initial;
