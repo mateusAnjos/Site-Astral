@@ -46,7 +46,9 @@ hr{
 .mobileOnly{
     display:none;
 }
-
+.displayNone{
+    display:none;
+}
 
 
 
