@@ -1371,6 +1371,7 @@ iframe{
 
 
 /*Footer*/
+
 .footerContainer {
     display: flex;
     flex-direction: column;
@@ -1379,6 +1380,7 @@ iframe{
 .leftFooterContent p{
     display: none;
 }
+
 .leftFooterSection {
     justify-content: left;
     align-items: center;
