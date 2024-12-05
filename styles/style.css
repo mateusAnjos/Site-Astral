@@ -642,6 +642,7 @@ hr{
     align-items: flex-start;
     flex-direction: column;
     width: 60%;
+    gap: 8px
 }
 .leftFooterSection p{
     margin-top:1rem;
