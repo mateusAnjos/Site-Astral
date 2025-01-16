@@ -42,17 +42,19 @@ function closeMenu(){
     navMenu.classList.remove("active");
 }
 
-function scrollToSection(event, sectionId) {
-    event.preventDefault(); // Impede o comportamento padrão de adicionar o hash à URL
+
+  function scrollToSection(event, sectionId) {
+    event.preventDefault();
 
     // Rola suavemente até a seção correspondente
     var section = document.querySelector(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
 
     // Remove o hash da URL sem recarregar a página
-    history.replaceState(null, null, ' '); // Deixa a URL sem o hash
+    history.replaceState(null, null, ' ');
   }
 
+  // Detecta o hash ao carregar a página e rola até a seção correta
   window.onload = function() {
     var hash = window.location.hash;
     if (hash) {
