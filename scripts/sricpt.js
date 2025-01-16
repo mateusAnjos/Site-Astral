@@ -42,3 +42,25 @@ function closeMenu(){
     navMenu.classList.remove("active");
 }
 
+function scrollToSection(event, sectionId) {
+    event.preventDefault(); // Impede o comportamento padrão de adicionar o hash à URL
+
+    // Rola suavemente até a seção correspondente
+    var section = document.querySelector(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+
+    // Remove o hash da URL sem recarregar a página
+    history.replaceState(null, null, ' '); // Deixa a URL sem o hash
+  }
+
+  window.onload = function() {
+    var hash = window.location.hash;
+    if (hash) {
+      var section = document.querySelector(hash);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        // Remove o hash da URL após rolar para a seção
+        history.replaceState(null, null, ' ');
+      }
+    }
+  };
