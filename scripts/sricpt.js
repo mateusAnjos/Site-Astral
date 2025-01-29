@@ -1,18 +1,38 @@
 
 //Acordion Logic
-document.querySelectorAll('.accordion-button').forEach(button =>{
-    button.addEventListener('click', ()=>{
-        const accordionContent = button.parentElement.nextElementSibling
+// document.querySelectorAll('.accordion-button').forEach(button =>{
+//     button.addEventListener('click', ()=>{
+//         const accordionContent = button.parentElement.nextElementSibling
 
-        button.classList.toggle('accordion-button-active')
+//         button.classList.toggle('accordion-button-active')
 
-        if (button.classList.contains('accordion-button-active')){
-            accordionContent.style.maxHeight =accordionContent.scrollHeight+'px'
-        }else{
-            accordionContent.style.maxHeight =0
-        }
-    })
-})
+//         if (button.classList.contains('accordion-button-active')){
+//             accordionContent.style.maxHeight =accordionContent.scrollHeight+'px'
+//         }else{
+//             accordionContent.style.maxHeight =0
+//         }
+//     })
+// })
+
+document.querySelectorAll('#collapseUL li').forEach(item => {
+  item.addEventListener('click', (event) => {
+      // Verifica se o clique foi na área de conteúdo do acordeão, não dentro dele
+      if (!event.target.closest('.collaspeContent')) {
+          const button = item.querySelector('.accordion-button');
+          const accordionContent = item.querySelector('.collaspeContent');
+
+          // Alterna a classe do botão
+          button.classList.toggle('accordion-button-active');
+
+          // Abre ou fecha o conteúdo
+          if (button.classList.contains('accordion-button-active')) {
+              accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+          } else {
+              accordionContent.style.maxHeight = 0;
+          }
+      }
+  });
+});
 
 
 
